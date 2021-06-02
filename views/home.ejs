@@ -1,5 +1,14 @@
 <%- include('partials/header.ejs') %>
 <h1>Home</h1>
 <p><%=content%></p>
- 
+
+  <% for(var a=0;a<posts.length;a++){ %>
+
+   
+    <p><%=posts[a].title%></p>
+    <p><%=posts[a].content%></p>
+  <%}%>
+
+
+
 <%- include('partials/footer.ejs') %>
